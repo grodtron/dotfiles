@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/gordon/m/spiderapi/src/p4factory/submodules/p4c-behavioral/p4c_bm/templates/src'
+let g:netrw_dirhist_2='/home/gordon/m/spiderapi/.git'
+let g:netrw_dirhist_3='/home/gordon/m/spiderapi/src/p4factory/submodules/p4c-behavioral/p4c_bm/templates/src'

@@ -1,0 +1,53 @@
+URxvt.scrollstyle: plain
+
+URxvt*cursorColor: magenta
+URxvt*cursorColor2: black
+
+URxvt*foreground: #f2f2f2
+URxvt*background: #101010
+
+! Normal
+! color0 black
+! color1 red
+! color2 green
+! color3 yellow
+! color4 blue
+! color5 purple
+! color6 cyan
+! color7 white
+
+URxvt*color0:    #6c6c6c
+URxvt*color1:    #e9897c
+URxvt*color2:    #b6e77d
+URxvt*color3:    #ecebbe
+URxvt*color4:    #a9cdeb
+URxvt*color5:    #ea96eb
+URxvt*color6:    #c9caec
+URxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+URxvt*color8:    #747474
+URxvt*color9:    #f99286
+URxvt*color10:    #c3f786
+URxvt*color11:    #fcfbcc
+URxvt*color12:    #b6defb
+URxvt*color13:    #fba1fb
+URxvt*color14:    #d7d9fc
+URxvt*color15:    #e2e2e2
+
+URxvt.font: xft:inconsolata:size=14
+
+
+!enabling clickable links:
+URxvt.perl-ext-common:  default,matcher,vtwheel
+URxvt.urlLauncher:    /usr/bin/midori
+URxvt.matcher.button:  1
