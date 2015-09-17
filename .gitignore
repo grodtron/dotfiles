@@ -12,3 +12,6 @@
 !/.bash/git-scripts
 !/.bash/git-scripts/*
 !/.bash/git-scripts/**/*
+!/.bash/liquidprompt
+!/.bash/liquidprompt/*
+!/.bash/liquidprompt/**/*
