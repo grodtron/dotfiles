@@ -17,3 +17,6 @@
 !/.bash/liquidprompt
 !/.bash/liquidprompt/*
 !/.bash/liquidprompt/**/*
+!/.vim/vim-addons/jellybeans
+!/.vim/vim-addons/jellybeans
+!/.vim/vim-addons/jellybeans

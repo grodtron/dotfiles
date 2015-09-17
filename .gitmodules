@@ -4,3 +4,6 @@
 [submodule ".bash/liquidprompt"]
 	path = .bash/liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
+[submodule ".vim/vim-addons/jellybeans"]
+	path = .vim/vim-addons/jellybeans
+	url = git://github.com/nanotech/jellybeans.vim
