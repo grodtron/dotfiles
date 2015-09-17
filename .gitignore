@@ -5,7 +5,9 @@
 !/.vim/**/*
 !.vimrc
 !.Xresources
-!.bash*
+!.bashrc
+!.bash_aliases
+!.bash_logout
 !/.bash/
 !/.bash/*
 !/.bash/**/*
