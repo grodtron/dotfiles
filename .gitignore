@@ -5,3 +5,10 @@
 !/.vim/**/*
 !.vimrc
 !.Xresources
+!.bash*
+!/.bash/
+!/.bash/*
+!/.bash/**/*
+!/.bash/git-scripts
+!/.bash/git-scripts/*
+!/.bash/git-scripts/**/*
