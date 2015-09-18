@@ -7,3 +7,21 @@
 [submodule ".vim/vim-addons/jellybeans"]
 	path = .vim/vim-addons/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim
+[submodule ".vim/vim-addons/snipmate"]
+	path = .vim/vim-addons/snipmate
+	url = git://github.com/garbas/vim-snipmate
+[submodule ".vim/vim-addons/tlib"]
+	path = .vim/vim-addons/tlib
+	url = git://github.com/tomtom/tlib_vim
+[submodule ".vim/vim-addons/vim-addon-manager"]
+	path = .vim/vim-addons/vim-addon-manager
+	url = git://github.com/MarcWeber/vim-addon-manager
+[submodule ".vim/vim-addons/vim-addon-mw-utils"]
+	path = .vim/vim-addons/vim-addon-mw-utils
+	url = git://github.com/MarcWeber/vim-addon-mw-utils
+[submodule ".vim/vim-addons/vim-pi"]
+	path = .vim/vim-addons/vim-pi
+	url = https://bitbucket.org/vimcommunity/vim-pi
+[submodule ".vim/vim-addons/vim-snippets"]
+	path = .vim/vim-addons/vim-snippets
+	url = git://github.com/honza/vim-snippets
