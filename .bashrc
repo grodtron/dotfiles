@@ -8,7 +8,8 @@ case $- in
       *) return;;
 esac
 
-PATH=$PATH:/home/gordon/.bash/git-scripts
+PATH=$PATH:$HOME/.bash/git-scripts:$HOME/.bash
+
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -104,6 +105,10 @@ source ~/.bash/liquidprompt/liquidprompt
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+if [ -f ~/.bash_local ]; then
+   source ~/.bash_local
 fi
 
 # enable programmable completion features (you don't need to enable
