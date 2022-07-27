@@ -1,0 +1,7 @@
+[user]
+	name = Gordon Bailey
+	email = gb@gordonbailey.net
+[core]
+	editor = vim
+[init]
+	defaultBranch = mainline
