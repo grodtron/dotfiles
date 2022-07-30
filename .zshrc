@@ -101,5 +101,7 @@ export EDITOR='vim'
 # Load provisioned env vars
 source $HOME/.env.sh
 
+export CC=clang-14
+
 # See https://wiki.archlinux.org/title/Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/$DOTFILES_GIT_REPO_DIR_NAME/ --work-tree=$HOME'
