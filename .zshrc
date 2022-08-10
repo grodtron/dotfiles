@@ -1,3 +1,7 @@
+# Always join or create a tmux session so that we can pick up again
+# if disconnected
+if [ "$TMUX" = "" ]; then exec tmux new-session -A -s dev; fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
