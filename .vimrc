@@ -257,7 +257,7 @@ augroup END
 
 Glaive codefmt
     \ plugin[mappings]=',='
-    \ clang_format_executable='clang-format-8'
+    \ clang_format_executable='clang-format'
     \ clang_format_style='file'
     \ autopep8_executable='/home/ANT.AMAZON.COM/gorbaile/.toolbox/bin/black'
     "\ autopep8_executable='/usr/local/bin/autopep8'
