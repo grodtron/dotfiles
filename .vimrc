@@ -149,8 +149,8 @@ nnoremap <leader>l <c-w>l
 " Open the corresponding `.cc` or `.hh` file
 " see: http://vim.wikia.com/wiki/Easily_switch_between_source_and_header_file 
 "   'Manual Switching'
-nnoremap <leader>ec :e %<.cpp<CR>
-nnoremap <leader>eh :e %<.h<CR>
+nnoremap <leader>ec :e %<.cc<CR>
+nnoremap <leader>eh :e %<.hh<CR>
 " Open the current directory
 nnoremap <leader>ed :e %:p:h<CR>
 
