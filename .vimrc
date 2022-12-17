@@ -184,8 +184,7 @@ map <leader>dl :diffg LO<cr>:diffupdate<cr>
 " }}}
 " Building {{{
 
-set makeprg="brazil-build release" "~/build-and-test-filter-paths.py
-"set makeprg="cat log"
+set makeprg=bazel\ build
 
 " Patterns to ignore for errorformat, see:
 " http://stackoverflow.com/a/7757750/1084754
@@ -205,7 +204,7 @@ map <leader>cn :cnext<cr>
 map <leader>cp :cprev<cr>
 
 " bd == build directory. Bazel build all targets in the current directory
-map <leader>bd :make %:h:all<cr>
+map <leader>bd :make //%:h:all<cr>
 
 " }}}
 " Indentation {{{
