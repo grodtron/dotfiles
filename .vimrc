@@ -184,7 +184,7 @@ map <leader>dl :diffg LO<cr>:diffupdate<cr>
 " }}}
 " Building {{{
 
-set makeprg=bazel\ build
+set makeprg=bazel
 
 " Patterns to ignore for errorformat, see:
 " http://stackoverflow.com/a/7757750/1084754
@@ -204,7 +204,9 @@ map <leader>cn :cnext<cr>
 map <leader>cp :cprev<cr>
 
 " bd == build directory. Bazel build all targets in the current directory
-map <leader>bd :make //%:h:all<cr>
+map <leader>bd :make build //%:h:all<cr>
+" bt == test directory. Bazel test all targets in the current directory
+map <leader>bt :make test //%:h:all<cr>
 
 " }}}
 " Indentation {{{
