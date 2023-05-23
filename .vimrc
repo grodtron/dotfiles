@@ -23,6 +23,9 @@ Plugin 'google/vim-codefmt'
 " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
 
+" Linting on the fly
+Plugin 'dense-analysis/ale'
+
 " All required parts of snipmate
 let g:snipMate = { 'snippet_version' : 1 }
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -99,17 +102,21 @@ set listchars=trail:!,tab:>-
 " If we're in a cpp file, then also match angle brackets with each other
 autocmd FileType cpp set matchpairs+=<:>
 
-" Highlight OpenCL files as C
-autocmd BufRead,BufNewFile *.cl set filetype=c
+" highlight opencl files as c
+autocmd bufread,bufnewfile *.cl set filetype=c
 autocmd BufRead,BufNewFile *.clh set filetype=c
+
+" highlight clj as clojure
+autocmd bufread,bufnewfile *.clj set filetype=clojure
+autocmd bufread,bufnewfile *.edn set filetype=clojure
 
 " Highlight Cuda files as Cuda
 autocmd BufRead,BufNewFile *.cu.cc set filetype=cuda
 autocmd BufRead,BufNewFile *.cu.hh set filetype=cuda
 
 " Highlight Bazel files as python
-autocmd BufRead,BufNewFile *.bzl set filetype=python
-autocmd BufRead,BufNewFile BUILD set filetype=python
+autocmd BufRead,BufNewFile *.bzl set filetype=bazel
+autocmd BufRead,BufNewFile BUILD set filetype=bazel
 " Highlight scons files as python
 autocmd BufRead,BufNewFile sconstruct set filetype=python
 " Highlight Amazon `Config` files as if they were python. They're not, but
@@ -254,22 +261,22 @@ augroup ccpabbrev
 augroup END
 
 " }}}
-" Automatic Formatting {{{
+" Automatic Formatting & Linting {{{
+
+let g:ale_linters = {'clojure': ['clj-kondo']}
 
 Glaive codefmt
     \ plugin[mappings]=',='
     \ clang_format_executable='clang-format'
     \ clang_format_style='file'
-    \ autopep8_executable='/home/ANT.AMAZON.COM/gorbaile/.toolbox/bin/black'
-    "\ autopep8_executable='/usr/local/bin/autopep8'
+ "   \ autopep8_executable='/home/ANT.AMAZON.COM/gorbaile/.toolbox/bin/black'
 
 " Auto format on buffer write
 augroup autoformat
     autocmd!
-    autocmd FileType cpp AutoFormatBuffer
-    autocmd FileType c AutoFormatBuffer
-    autocmd FileType cuda AutoFormatBuffer
-    " autocmd FileType python AutoFormatBuffer
+    autocmd FileType bazel AutoFormatBuffer buildifier
+    autocmd FileType cpp,c,cuda AutoFormatBuffer clang-format
+    autocmd FileType clojure AutoFormatBuffer zprint
 augroup END
 " 
 
