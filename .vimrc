@@ -51,6 +51,8 @@ Plugin 'vim-jp/vim-cpp'
 " Kotlin syntax support
 Plugin 'udalov/kotlin-vim'
 
+Plugin 'hashivim/vim-terraform'
+
 " Typescript syntax support
 Plugin 'leafgarland/typescript-vim'
 
@@ -109,6 +111,9 @@ autocmd BufRead,BufNewFile *.clh set filetype=c
 " highlight clj as clojure
 autocmd bufread,bufnewfile *.clj set filetype=clojure
 autocmd bufread,bufnewfile *.edn set filetype=clojure
+
+" tf as terraform
+autocmd bufread,bufnewfile *.tf set filetype=terraform
 
 " Highlight Cuda files as Cuda
 autocmd BufRead,BufNewFile *.cu.cc set filetype=cuda
@@ -263,7 +268,7 @@ augroup END
 " }}}
 " Automatic Formatting & Linting {{{
 
-let g:ale_linters = {'clojure': ['clj-kondo']}
+let g:ale_linters = {'clojure': ['clj-kondo'], 'terraform': ['tflint']}
 
 Glaive codefmt
     \ plugin[mappings]=',='
