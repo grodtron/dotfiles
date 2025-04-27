@@ -62,7 +62,7 @@ Plugin 'nanotech/jellybeans.vim'
 
 " Coerce to/from camel/snake
 Plugin 'tpope/vim-abolish'
-Plugin 'Align'
+Plugin 'vim-scripts/Align'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
