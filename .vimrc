@@ -36,7 +36,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'mileszs/ack.vim'
 
 " Show name of current cpp function
-Plugin 'mgedmin/chelper.vim'
+Plugin 'mgedmin/taghelper.vim'
 
 " Plugin 'airblade/vim-gitgutter'
 
@@ -253,7 +253,7 @@ let g:NERDTreeShowHidden=1
 " Status line {{{
 
 set laststatus=2
-set statusline=%<%f\ %h%m%r\ %1*%{CTagInStatusLine()}%*%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r\ %1*%{taghelper#curtag()}%*%=%-14.(%l,%c%V%)\ %P
 
 " }}}
 " Abbreviations {{{
